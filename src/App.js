@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Chessboard from 'chessboardjs';
 
-function App() {
+// import { Chess } from 'chess.js'; // Import Chess directly from chess.js
+ 
+const App = () => {
+  let board1 = Chessboard('board1');
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Chess Game</h1>
+      <div id='board1' style={{ width: '400px' }}>
+       
+      </div>
     </div>
   );
-}
+};
 
 export default App;
